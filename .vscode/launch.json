@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run/Debug Original",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/receipt_printer",
+      "cwd": "${workspaceFolder}",
+      "terminal": "integrated",
+      "preLaunchTask": "Build Original"
+    },
+    {
+      "name": "Run/Debug Current File",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/${fileBasenameNoExtension}",
+      "cwd": "${workspaceFolder}",
+      "terminal": "integrated",
+      "preLaunchTask": "Build Current File"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+# Compiled output
+build/
+*.dSYM/
+*.o
+
+# Created by the program at runtime
+receipt.txt
+
+# macOS
+.DS_Store
